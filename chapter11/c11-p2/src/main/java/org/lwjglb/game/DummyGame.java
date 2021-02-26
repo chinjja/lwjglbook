@@ -88,7 +88,7 @@ public class DummyGame implements IGameLogic {
         att = new PointLight.Attenuation(0.0f, 0.0f, 0.02f);
         sl_pointLight.setAttenuation(att);
         Vector3f coneDir = new Vector3f(0, 0, -1);
-        float cutoff = (float) Math.cos(Math.toRadians(140));
+        float cutoff = (float) Math.toRadians(30);
         spotLight = new SpotLight(sl_pointLight, coneDir, cutoff);
 
         lightPosition = new Vector3f(-1, 0, 0);
